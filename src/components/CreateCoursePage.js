@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { createCourseApi } from "../API/courseApi";
+import { useNavigate } from "react-router";
 
 const CreateCoursePage = () => {
   const [formData, setFormData] = useState({
@@ -10,12 +11,14 @@ const CreateCoursePage = () => {
     category: "",
     slug: "",
   });
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // console.log(formData);
-    createCourseApi(formData);
+    await createCourseApi(formData);
+    navigate("/course");
 
     setFormData({
       title: "",
