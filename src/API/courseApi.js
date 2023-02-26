@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BaseUrl = "https://class3-fullstack-server.onrender.com/course";
+const BaseUrl = "http://localhost:5050/course";
 
 const DeleteCourseApi = async (id) => {
   const result = await axios.delete(BaseUrl + "/" + id);
