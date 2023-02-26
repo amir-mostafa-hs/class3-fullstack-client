@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BaseUrl = "https://wild-rose-angelfish-gear.cyclic.app/course";
+const BaseUrl = "https://class3-fullstack-server.onrender.com/course";
 
 const DeleteCourseApi = async (id) => {
   const result = await axios.delete(BaseUrl + "/" + id);
