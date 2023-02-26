@@ -5,8 +5,8 @@ import { DeleteCourseApi } from "../API/courseApi";
 const CourseList = ({ coursesData }) => {
   const navigate = useNavigate();
 
-  const handleDelete = (id) => {
-    DeleteCourseApi(id);
+  const handleDelete = async (id) => {
+    await DeleteCourseApi(id);
     navigate(0);
   };
   return (
