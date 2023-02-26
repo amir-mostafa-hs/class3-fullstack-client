@@ -7,7 +7,7 @@ const CourseList = ({ coursesData }) => {
 
   const handleDelete = async (id) => {
     await DeleteCourseApi(id);
-    navigate("/course");
+    navigate(0);
   };
   return (
     <>
