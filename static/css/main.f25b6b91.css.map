@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.f25b6b91.css","mappings":"AAAA,SAEE,2BAA4B,CAD5B,SAEF","sources":["styles.css"],"sourcesContent":[".NavLink {\r\n  color: red;\r\n  border-bottom: solid 2px red;\r\n}\r\n"],"names":[],"sourceRoot":""}
